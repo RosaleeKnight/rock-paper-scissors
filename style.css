@@ -25,8 +25,15 @@ body {
 
 .options {
     display: flex;
-    width: 200px;
+    width: 500px;
     justify-content: space-between;
+}
+
+.rock,
+.paper,
+.scissors {
+    width: 120px;
+    cursor: pointer;
 }
 
 .result {
