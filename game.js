@@ -2,11 +2,10 @@ const game = () => {
     let playerScore = 0
     let computerScore = 0
     let moves = 0
-
     const playGame = () => {
         const rockBtn = document.querySelector('.rock')
         const paperBtn = document.querySelector('.paper')
-        const scissorsBtn = document.querySelector('.scissor')
+        const scissorsBtn = document.querySelector('.scissors')
         const playerOptions = [rockBtn,paperBtn,scissorsBtn]
         const computerOptions = ['rock','paper','scissors']
 
@@ -24,7 +23,6 @@ const game = () => {
             })
         })
     }
-
     const winner = (player,computer) => {
         const result = document.querySelector('.result');
         const playerScoreBoard = document.querySelector('.p-count')
@@ -68,7 +66,6 @@ const game = () => {
             }
         }
     }
-
     const gameOver = (playerOptions,movesLeft) => {
         const chooseMove = document.querySelector('.move');
         const result = document.querySelector('.result');
@@ -93,12 +90,10 @@ const game = () => {
             result.style.color = 'grey';
         }
         reloadBtn.innerText = 'Rematch';
-        reloadBtn.style.display = 'flex';
         reloadBtn.addEventListener('click',() => {
             window.location.reload();
         })
     }
     playGame();
 }
-
 game();
