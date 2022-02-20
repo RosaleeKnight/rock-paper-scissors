@@ -68,6 +68,7 @@ const game = () => {
             }
         }
     }
+
     const gameOver = (playerOptions,movesLeft) => {
         const chooseMove = document.querySelector('.move');
         const result = document.querySelector('.result');
@@ -97,4 +98,7 @@ const game = () => {
             window.location.reload();
         })
     }
+    playGame();
 }
+
+game();
