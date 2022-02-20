@@ -13,8 +13,22 @@ body {
 
 .score {
     display: flex;
-    width: 200px;
+    width: 300px;
     justify-content: space-between;
+}
+
+.playerScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.computerScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .p-count,
