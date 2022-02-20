@@ -30,37 +30,37 @@ const game = () => {
         player = player.toLowerCase();
         computer = computer.toLowerCase();
         if(player === computer){
-            result.textContent = 'Tie'
+            result.textContent = 'Tied Match.'
         }
         else if(player == 'rock'){
             if(computer == 'paper'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Won';
+                result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'paper'){
             if(computer == 'scissors'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Won';
+                result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'scissors'){
             if(computer == 'rock'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer Win!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Won';
+                result.textContent = 'Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
@@ -86,10 +86,10 @@ const game = () => {
             result.style.color = 'red'
         }else{
             result.style.fontSize = '16px';
-            result.innerText = 'Tie!';
+            result.innerText = 'Tied Game!';
             result.style.color = 'grey';
         }
-        reloadBtn.innerText = 'Rematch';
+        reloadBtn.innerText = 'Rematch?';
         reloadBtn.addEventListener('click',() => {
             window.location.reload();
         })

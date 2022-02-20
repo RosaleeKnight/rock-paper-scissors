@@ -1,0 +1,46 @@
+body {
+    background-color: #e6f3ff;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.p-count,
+.c-count {
+    text-align: center;
+    font-size: 20px;
+}
+
+.options {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.result {
+    margin-top: 20px;
+    font-style: 20px;
+}
+
+.reload {
+    margin-top: 20px;
+    padding: 2px;
+    background: #e6f3ff;
+    font-weight: bold;
+    border: 10px;
+    border-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
