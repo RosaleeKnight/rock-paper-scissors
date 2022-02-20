@@ -6,16 +6,12 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <script>
-        const computerPlay= ["rock", "paper", "scissors"];
-        
-        function random_item(computerPlay) {
-            return computerPlay[Math.floor(Math.random()*computerPlay.length)];
-            }
+    <div class="options">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+    </div>
 
-        let playerSelection = window.prompt('select rock, paper or scissors');
-        const compputerSelection = computerPlay
-
-    </script>
+    <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
