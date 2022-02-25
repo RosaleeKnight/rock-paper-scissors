@@ -30,37 +30,37 @@ const game = () => {
         player = player.toLowerCase();
         computer = computer.toLowerCase();
         if(player === computer){
-            result.textContent = 'Tied Match.'
+            result.textContent = 'You picked the same. Tied Match.'
         }
         else if(player == 'rock'){
             if(computer == 'paper'){
-                result.textContent = 'Computer Wins!';
+                result.textContent = 'Rock gets covered by paper. Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Wins!';
+                result.textContent = 'Rock smashes scissors. Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'paper'){
             if(computer == 'scissors'){
-                result.textContent = 'Computer Wins!';
+                result.textContent = 'Paper gets cut by scissors. Computer Wins!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Wins!';
+                result.textContent = 'Paper covers rock. Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
         }
         else if(player == 'scissors'){
             if(computer == 'rock'){
-                result.textContent = 'Computer Win!';
+                result.textContent = 'Scissors gets smashed by rock. Computer Win!';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }else{
-                result.textContent = 'Player Wins!';
+                result.textContent = 'Scissors cuts paper. Player Wins!';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
             }
