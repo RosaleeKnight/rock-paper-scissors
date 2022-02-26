@@ -1,67 +1,155 @@
-body {
-    background-color: #e6f3ff;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.game {
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color:#cccec5;
+    color: rgb(116, 116, 116);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.header {
     display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
     justify-content: center;
+    padding: 40px 0px;
+    background-color: #000833;
+}
+
+.title {
+    font-size: 32px;
+    color: #7e7e7e;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.scoreboard {
+    margin-bottom: 15px;
+}
+
+.score-info {
+    font-size: 32px;
+}
+
+.score-message {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.scores-container {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.score-box {
+    width: 170px;
 }
 
 .score {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-}
-
-.playerScore {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.computerScore {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.p-count,
-.c-count {
-    text-align: center;
-    font-size: 20px;
-}
-
-.options {
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-}
-
-.rock,
-.paper,
-.scissors {
-    width: 120px;
-    cursor: pointer;
-}
-
-.result {
-    margin-top: 20px;
-    font-style: 20px;
-}
-
-.reload {
-    margin-top: 20px;
-    padding: 2px;
-    background: #e6f3ff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
     font-weight: bold;
-    border: 10px;
-    border-color: black;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
     border-radius: 10px;
-    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.btn-square {
+    width: 160px;
+    height: 160px;
+}
+
+.btn:hover {
+    background-color: #000833;
+}
+
+.btn:active {
+    background-color: #000000;
+}
+
+.sign {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #cccec5;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn-restart {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.overlay.active {
+    display: block;
 }
