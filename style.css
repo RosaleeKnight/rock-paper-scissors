@@ -25,6 +25,7 @@ button {
     font-size: inherit;
     cursor: pointer;
     outline: none;
+    margin-bottom: 25px;
 }
 
 .header {
