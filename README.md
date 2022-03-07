@@ -1,3 +1,11 @@
+![GitHub top language](https://img.shields.io/github/languages/top/RosaleeKnight/rock-paper-scissors)
+![GitHub language count](https://img.shields.io/github/languages/count/RosaleeKnight/rock-paper-scissors)
+![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/RosaleeKnight/rock-paper-scissors)
+![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/RosaleeKnight/rock-paper-scissors)
+![GitHub](https://img.shields.io/github/license/RosaleeKnight/rock-paper-scissors)
+![GitHub issues](https://img.shields.io/github/issues/RosaleeKnight/rock-paper-scissors)
+[![HitCount](https://hits.dwyl.com/RosaleeKnight/rock-paper-scissors.svg?style=flat)](http://hits.dwyl.com/RosaleeKnight/rock-paper-scissors)
+
 # rock-paper-scissors
 
 This is a multipart project. 
