@@ -1,7 +1,5 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/RosaleeKnight/rock-paper-scissors-clone)
 ![GitHub language count](https://img.shields.io/github/languages/count/RosaleeKnight/rock-paper-scissors-clone)
-![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/RosaleeKnight/rock-paper-scissors-clone)
-![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/RosaleeKnight/rock-paper-scissors-clone)
 ![GitHub](https://img.shields.io/github/license/RosaleeKnight/rock-paper-scissors-clone)
 ![GitHub issues](https://img.shields.io/github/issues/RosaleeKnight/rock-paper-scissors-clone)
 [![HitCount](https://hits.dwyl.com/RosaleeKnight/rock-paper-scissors-clone.svg?style=flat)](http://hits.dwyl.com/RosaleeKnight/rock-paper-scissors-clone)
